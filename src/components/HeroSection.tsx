@@ -1,4 +1,4 @@
-import heroBg from "@/assets/hero-packaging.jpg";
+import heroBg from "@/assets/zarko-cloudcollection-2018-01.jpg";
 
 const HeroSection = () => {
   return (
@@ -8,7 +8,7 @@ const HeroSection = () => {
         alt=""
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-black/25" />
+      <div className="absolute inset-0 bg-black/30" />
       <div className="relative z-10 text-center px-8">
         <p className="font-body text-xs tracking-[0.4em] uppercase text-white/70 mb-6">
           Premium Sustainable Packaging
