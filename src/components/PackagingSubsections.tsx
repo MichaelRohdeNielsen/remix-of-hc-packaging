@@ -1,6 +1,6 @@
 import SectionReveal from "./SectionReveal";
 import makgeolliImg from "@/assets/makgeolli.jpg";
-import chanelImg from "@/assets/paperpulp-new.png";
+import chanelImg from "@/assets/No5.jpg";
 
 const PackagingSubsections = () => {
   return (
