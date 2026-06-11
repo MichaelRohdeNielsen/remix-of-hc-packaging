@@ -1,21 +1,21 @@
 import SectionReveal from "./SectionReveal";
 import img1 from "@/assets/makgeolli.jpg";
-import img2 from "@/assets/zarko-parfume.jpeg";
+import img2 from "@/assets/6af7aea8f2761779a851a1778ac28369.jpg";
 import img3 from "@/assets/Body_brush_RECHARGE_03_w._box_1400x1400-p.png";
 import img4 from "@/assets/zarko-cloudcollection-02.jpg";
 import img5 from "@/assets/zarkoperfume-cloud-3.jpg";
-import img6 from "@/assets/chanel-paperpulp.jpg";
+import img6 from "@/assets/41ed64907a064e25d184f88681bd67be.jpg";
 import img7 from "@/assets/lakrids-gaveaesker.jpg";
 
 // 4-col × 2-row grid, cell index 2 is the text cell
 const gridItems = [
   { type: "image", src: img1, alt: "Bukchon Makgeolli packaging" },
-  { type: "image", src: img2, alt: "Zarkoperfume packaging" },
+  { type: "image", src: img2, alt: "Aery Happy Space candle" },
   { type: "text" },
   { type: "image", src: img3, alt: "Karmameju luxury packaging" },
   { type: "image", src: img4, alt: "Cloud Collection packaging" },
-  { type: "image", src: img5, alt: "Zarkoperfume Cloud 3" },
-  { type: "image", src: img6, alt: "Chanel paper pulp packaging" },
+  { type: "image", src: img5, alt: "Zarkoperfume Cloud Collection" },
+  { type: "image", src: img6, alt: "Premium tea packaging" },
   { type: "image", src: img7, alt: "Lakrids by Bülow packaging" },
 ];
 
