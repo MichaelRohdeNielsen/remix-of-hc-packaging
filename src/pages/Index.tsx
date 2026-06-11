@@ -7,7 +7,6 @@ import SustainableSection from "@/components/SustainableSection";
 import GreenFootprintSection from "@/components/GreenFootprintSection";
 import ComplianceSection from "@/components/ComplianceSection";
 import TheDetailsSection from "@/components/TheDetailsSection";
-import PaperpulpSection from "@/components/PaperpulpSection";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 
@@ -23,7 +22,6 @@ const Index = () => {
       <GreenFootprintSection />
       <ComplianceSection />
       <TheDetailsSection />
-      <PaperpulpSection />
       <AboutSection />
       <ContactSection />
     </div>

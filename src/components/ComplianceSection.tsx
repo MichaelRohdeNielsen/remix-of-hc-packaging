@@ -4,9 +4,9 @@ import boxImg from "@/assets/578c82f16d05300c70035359ab84936c.jpg";
 const ComplianceSection = () => {
   return (
     <section id="compliance" className="bg-[#e8866a]">
-      <div className="grid grid-cols-1 md:grid-cols-2 min-h-[80vh]">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Left — text */}
-        <div className="px-10 md:px-16 py-20 flex items-start">
+        <div className="px-10 md:px-16 pt-16 pb-12 flex items-start">
           <SectionReveal>
             <div className="flex items-center gap-4 mb-2">
               <h2
@@ -22,7 +22,7 @@ const ComplianceSection = () => {
             </p>
             <div className="border-t border-white/30 mb-8 w-full max-w-md" />
 
-            <ul className="space-y-5 mb-12 max-w-md">
+            <ul className="space-y-5 mb-8 max-w-md">
               {[
                 "Our factories in China and Vietnam operate under our direct oversight, supported by a dedicated, in-house QC team on the ground.",
                 "Every site meets BSCI and ISO standards as baseline – but we're proud to say we've passed brand-specific audits from names like Disney and L'Oréal.",

@@ -23,7 +23,7 @@ const SustainableSection = () => {
             Sustainability that's real. Quality that holds. Prices that make sense.
           </p>
           <p className="font-body text-sm text-white/50 leading-relaxed max-w-3xl mx-auto mb-3">
-            That's why we use <strong className="text-white/80">100% recycled paper</strong>, hold key certifications (<strong className="text-white/80">FSC, BSCI</strong>), and continuously innovate to reduce materials, energy, and waste – without compromising on finish or function. We serve global clients, including leading lifestyle and luxury brands with the same dedication, discretion, and reliability you'd expect from an EU-based production – often exceeding expectations.
+            That's why we use <strong style={{ color: "#7bb3d4" }}>100% recycled paper</strong>, hold key certifications (<strong style={{ color: "#7bb3d4" }}>FSC, BSCI</strong>), and continuously innovate to reduce materials, energy, and waste – without compromising on finish or function. We serve global clients, including leading lifestyle and luxury brands with the same dedication, discretion, and reliability you'd expect from an EU-based production – often exceeding expectations.
           </p>
           <p className="font-body text-sm text-white/50 leading-relaxed max-w-3xl mx-auto mb-3">
             Our in-house paper pulp capabilities push sustainability even further, replacing plastic while increasing structural integrity.
