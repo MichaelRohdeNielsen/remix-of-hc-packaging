@@ -3,28 +3,41 @@ import lakridsImg from "@/assets/76daa82dd30a73bf4f7473bdae00229a.jpg";
 
 const SustainableSection = () => {
   return (
-    <section className="bg-zinc-900 py-24 px-8 md:px-16 lg:px-24">
+    <section className="bg-[#2e2e2e] pt-24 pb-0 px-8 md:px-16 overflow-hidden">
       <SectionReveal>
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <p className="font-body text-sm text-white/40 tracking-[0.3em] uppercase mb-4">Our promise</p>
-          <p className="font-serif text-2xl md:text-3xl text-white/70 mb-2">Your Trusted Partner in</p>
-          <h2 className="font-serif text-5xl md:text-7xl text-white leading-tight mb-10">
-            Sustainable Packaging
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <p className="font-serif text-xl md:text-2xl text-white/70 mb-1">
+            Your Trusted Partner in
+          </p>
+          <h2
+            className="font-sans font-black uppercase text-white leading-none mb-10"
+            style={{ fontSize: "clamp(2.5rem, 7vw, 6.5rem)" }}
+          >
+            Sustainable<br />Packaging
           </h2>
-          <p className="font-body text-base text-white/60 leading-relaxed mb-4 max-w-3xl mx-auto">
+
+          <p className="font-body text-sm text-white/60 leading-relaxed mb-3 max-w-3xl mx-auto">
             At HC Packaging, we know what your consumers expect and what every brand wants from their packaging:
           </p>
-          <p className="font-body text-base text-white font-medium mb-6">
+          <p className="font-body text-sm text-white font-semibold mb-5">
             Sustainability that's real. Quality that holds. Prices that make sense.
           </p>
-          <p className="font-body text-sm text-white/50 leading-relaxed max-w-3xl mx-auto mb-4">
-            That's why we use 100% recycled paper, hold key certifications (FSC, BSCI), and continuously innovate to reduce materials, energy, and waste — without compromising on finish or function.
+          <p className="font-body text-sm text-white/50 leading-relaxed max-w-3xl mx-auto mb-3">
+            That's why we use <strong className="text-white/80">100% recycled paper</strong>, hold key certifications (<strong className="text-white/80">FSC, BSCI</strong>), and continuously innovate to reduce materials, energy, and waste – without compromising on finish or function. We serve global clients, including leading lifestyle and luxury brands with the same dedication, discretion, and reliability you'd expect from an EU-based production – often exceeding expectations.
+          </p>
+          <p className="font-body text-sm text-white/50 leading-relaxed max-w-3xl mx-auto mb-3">
+            Our in-house paper pulp capabilities push sustainability even further, replacing plastic while increasing structural integrity.
           </p>
           <p className="font-body text-sm text-white/50 leading-relaxed max-w-3xl mx-auto">
-            FOB or full-service? It's your choice. Flexible terms, full transparency, and impeccable service come standard — but the experience is what truly sets us apart.
+            FOB or full-service? It's your choice. Flexible terms, full transparency, and impeccable service come standard – but the experience is what truly sets us apart.
           </p>
         </div>
-        <img src={lakridsImg} alt="Premium packaging for Lakrids by Bülow" className="w-full h-auto max-h-[70vh] object-cover object-center" />
+
+        <img
+          src={lakridsImg}
+          alt="Lakrids by Bülow premium packaging"
+          className="w-full max-h-[60vh] object-cover object-center block"
+        />
       </SectionReveal>
     </section>
   );

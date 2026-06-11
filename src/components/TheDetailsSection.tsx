@@ -5,30 +5,30 @@ const TheDetailsSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <img src={studioBg} alt="" className="absolute inset-0 w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/30" />
 
       <SectionReveal>
-        <div className="relative z-10 bg-[#f4b8b0]/90 px-12 py-16 max-w-xl mx-8 text-center">
-          <h2 className="font-serif text-4xl md:text-5xl text-zinc-900 mb-2 uppercase tracking-wide">
+        <div className="relative z-10 bg-[#f4b8b0] px-12 py-14 max-w-lg mx-8 text-center shadow-2xl">
+          <h2
+            className="font-sans font-black uppercase text-zinc-900 mb-1 leading-none"
+            style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)" }}
+          >
             The Details
           </h2>
-          <p className="font-serif text-2xl md:text-3xl text-zinc-800 mb-8 leading-tight">
+          <p className="font-serif text-xl md:text-2xl text-zinc-800 mb-8 leading-tight">
             they notice.<br />The memories they cannot shake.
           </p>
-          <div className="space-y-4">
+
+          <div className="space-y-5 text-center">
             <p className="font-body text-sm text-zinc-700 leading-relaxed">
               A perfume tells a story. A parfumeur dreams aloud.<br />
-              We translate those dreams into touch, into form, into the poetry of packaging.
-            </p>
-            <p className="font-body text-sm text-zinc-700 leading-relaxed">
-              Every curve, every weight, every whisper of a pump —<br />
+              We translate those dreams into touch, into form, into the poetry of packaging.<br />
+              Every curve, every weight, every whisper of a pump –<br />
               in perfect harmony with their narrative.
             </p>
             <p className="font-body text-sm text-zinc-700 leading-relaxed">
               No shortcuts. No compromises. Only one fluid, luxurious expression:<br />
-              their art made tangible.
-            </p>
-            <p className="font-body text-sm text-zinc-700 leading-relaxed font-medium">
+              their art made tangible.<br />
               One partner. One chain. One signature that turns scent into memory.
             </p>
           </div>

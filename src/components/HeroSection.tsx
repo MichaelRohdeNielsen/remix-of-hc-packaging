@@ -1,17 +1,47 @@
-import heroBg from "@/assets/nielshammers_06231_httpss.mj.runWvLgPHS_S0I_httpss.mj.run7Jxoa3_14d0f92d-851d-4663-afb0-42946fffc9be.jpg";
+import zarkoImg from "@/assets/zarko-cloudcollection-2018-01.jpg";
+import logoImg from "@/assets/logo.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-screen flex items-end overflow-hidden">
-      <img src={heroBg} alt="" className="absolute inset-0 w-full h-full object-cover object-top" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-      <div className="relative z-10 px-8 md:px-16 lg:px-24 pb-20">
-        <p className="font-body text-xs tracking-[0.4em] uppercase text-white/60 mb-4">
-          Premium Sustainable Packaging
-        </p>
-        <h1 className="font-serif text-7xl md:text-9xl text-white tracking-tight leading-none">
-          HC Packaging
-        </h1>
+    <section className="w-full min-h-screen flex flex-col md:flex-row overflow-hidden bg-[#f0eeeb]">
+      {/* Left — product photo */}
+      <div className="relative w-full md:w-[58%] min-h-[60vh] md:min-h-screen overflow-hidden">
+        <img
+          src={zarkoImg}
+          alt="Cloud Collection premium packaging"
+          className="w-full h-full object-cover object-center"
+        />
+      </div>
+
+      {/* Right — logo + text */}
+      <div className="w-full md:w-[42%] flex flex-col items-center justify-center px-10 md:px-16 py-16 bg-[#f0eeeb]">
+        {/* HC Packaging logo */}
+        <div className="mb-8 text-center">
+          <div className="flex flex-col items-center">
+            <span className="font-sans font-black text-[#2d2d2d] text-5xl md:text-6xl leading-none tracking-tight">H</span>
+            <div className="flex items-baseline gap-0">
+              <span className="font-sans font-black text-[#8a8a8a] text-4xl md:text-5xl tracking-tight leading-none">PA</span>
+              <span className="font-sans font-black text-[#2d2d2d] text-4xl md:text-5xl tracking-tight leading-none">C</span>
+              <span className="font-sans font-black text-[#8a8a8a] text-4xl md:text-5xl tracking-tight leading-none">KAGING</span>
+            </div>
+          </div>
+          <p className="font-body text-[10px] tracking-[0.35em] uppercase text-[#6b6b6b] mt-2">
+            Premium Sustainable Packaging
+          </p>
+        </div>
+
+        <div className="w-16 border-t border-[#2d2d2d] mb-8" />
+
+        <div className="max-w-xs text-center">
+          <p className="font-serif text-lg md:text-xl text-[#2d2d2d] leading-relaxed mb-5">
+            HC Packaging welcomes you to a world of premium, sustainable packaging.
+          </p>
+          <p className="font-serif text-lg md:text-xl text-[#2d2d2d] leading-relaxed">
+            Crafted for the luxury segment, and built to shape the future of packaging cooperations.
+          </p>
+        </div>
+
+        <div className="w-16 border-t border-[#2d2d2d] mt-8" />
       </div>
     </section>
   );
