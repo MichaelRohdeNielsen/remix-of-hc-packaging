@@ -1,31 +1,26 @@
 import SectionReveal from "./SectionReveal";
-import img1 from "@/assets/zarko-cloudcollection-2018-01.jpg";
-import img2 from "@/assets/Zarko parfume.jpeg";
+import heroImg from "@/assets/hero-main-new.png";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="bg-background py-32 px-8 md:px-16 lg:px-24">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start">
-        <SectionReveal>
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">About Us</p>
-          <h2 className="font-serif text-4xl md:text-6xl text-foreground mb-8 leading-tight">
-            Built for the<br />luxury segment
-          </h2>
-          <p className="font-body text-base text-muted-foreground leading-relaxed mb-6 max-w-md">
-            HC Packaging is a Copenhagen-based packaging company specialising in premium, sustainable solutions for the luxury market. We work with some of the most ambitious brands globally.
-          </p>
-          <p className="font-body text-base text-muted-foreground leading-relaxed mb-6 max-w-md">
-            Through our vertically integrated setup — including two dedicated paper pulp factories — we offer market-leading prices without compromising on design, speed, or sustainability.
-          </p>
-          <p className="font-body text-base text-muted-foreground leading-relaxed max-w-md">
-            Every detail matters. From the first sketch to the final unboxing.
-          </p>
-        </SectionReveal>
+    <section id="about">
+      {/* Dark branded image */}
+      <img src={heroImg} alt="HC Packaging — Premium Sustainable Packaging" className="w-full h-auto block" />
 
-        <SectionReveal delay={0.15}>
-          <div className="flex flex-col gap-4">
-            <img src={img1} alt="HC Packaging — premium fragrance packaging" className="w-full h-auto object-cover" />
-            <img src={img2} alt="HC Packaging — Zarkoperfume Cloud Collection" className="w-full h-auto object-cover" />
+      {/* White text section */}
+      <div className="bg-white py-24 px-8 md:px-16 lg:px-24">
+        <SectionReveal>
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-10">About us…</h2>
+            <p className="font-body text-base text-muted-foreground leading-relaxed mb-6">
+              HC Packaging Europe is the official European office of HC Packaging Asia and has been a proud part of the group since 2018. Located at Toldboden in the heart of Copenhagen, we serve as the strategic link between world-class Asian manufacturing and the demands of premium European brands.
+            </p>
+            <p className="font-body text-base text-muted-foreground leading-relaxed mb-6">
+              As part of the Hammers Group – a company widely recognized for its prominent role within the European lifestyle and fashion landscape – we bring deep market understanding, creative capability, and a strong commercial mindset to every collaboration. Our dedicated team of 16 specialists includes in-house product developers and graphic designers, allowing us to move fast, think creatively, and deliver tailored packaging solutions that meet the highest aesthetic and sustainability standards.
+            </p>
+            <p className="font-body text-base text-muted-foreground leading-relaxed">
+              From first concept to final delivery, HC Packaging Europe ensures clarity, agility, and precision – all backed by the scale and efficiency of our own production facilities in China and Vietnam.
+            </p>
           </div>
         </SectionReveal>
       </div>
