@@ -1,20 +1,18 @@
 import SectionReveal from "./SectionReveal";
-import tomDixonImg from "@/assets/tom dixon.png";
+import tomDixonImg from "@/assets/tom-dixon.png";
 
 const GreenFootprintSection = () => {
   return (
     <section className="relative overflow-hidden min-h-[70vh]">
       {/* Diagonal background: green left, white right */}
-      <div className="absolute inset-0 flex">
-        <div className="w-full h-full absolute inset-0 bg-white" />
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "#b5c99a",
-            clipPath: "polygon(0 0, 72% 0, 55% 100%, 0 100%)",
-          }}
-        />
-      </div>
+      <div className="absolute inset-0 bg-white" />
+      <div
+        className="absolute inset-0"
+        style={{
+          background: "#b5c99a",
+          clipPath: "polygon(0 0, 72% 0, 55% 100%, 0 100%)",
+        }}
+      />
 
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 min-h-[70vh]">
         {/* Left — text on green */}
@@ -30,7 +28,7 @@ const GreenFootprintSection = () => {
 
             <div className="space-y-8">
               <div className="flex gap-4 items-start">
-                <span className="text-2xl mt-1">💧</span>
+                <span className="text-2xl mt-1 shrink-0">💧</span>
                 <div>
                   <p className="font-body text-xs tracking-[0.2em] uppercase text-zinc-800 font-bold mb-1">
                     Harvesting Rainwater
@@ -42,7 +40,7 @@ const GreenFootprintSection = () => {
               </div>
 
               <div className="flex gap-4 items-start">
-                <span className="text-2xl mt-1">☀️</span>
+                <span className="text-2xl mt-1 shrink-0">☀️</span>
                 <div>
                   <p className="font-body text-xs tracking-[0.2em] uppercase text-zinc-800 font-bold mb-1">
                     70% Solar-Powered
@@ -54,7 +52,7 @@ const GreenFootprintSection = () => {
               </div>
 
               <div className="flex gap-4 items-start">
-                <span className="text-2xl mt-1">♻️</span>
+                <span className="text-2xl mt-1 shrink-0">♻️</span>
                 <div>
                   <p className="font-body text-xs tracking-[0.2em] uppercase text-zinc-800 font-bold mb-1">
                     Thoughtfully Chosen Materials

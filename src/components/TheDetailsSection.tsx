@@ -1,5 +1,5 @@
 import SectionReveal from "./SectionReveal";
-import studioBg from "@/assets/6af60a4fa5c65b872d72a2e51b6f4fa7.jpg";
+import studioBg from "@/assets/details-section.png";
 
 const TheDetailsSection = () => {
   return (

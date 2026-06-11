@@ -1,5 +1,5 @@
 import SectionReveal from "./SectionReveal";
-import lakridsImg from "@/assets/76daa82dd30a73bf4f7473bdae00229a.jpg";
+import lakridsImg from "@/assets/lakrids-gaveaesker.jpg";
 
 const SustainableSection = () => {
   return (

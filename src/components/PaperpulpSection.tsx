@@ -1,5 +1,5 @@
 import SectionReveal from "./SectionReveal";
-import modelBg from "@/assets/nielshammers_06231_httpss.mj.runWvLgPHS_S0I_httpss.mj.run7Jxoa3_14d0f92d-851d-4663-afb0-42946fffc9be.jpg";
+import trendsBg from "@/assets/trends-section.png";
 
 import zarkoperfumeLogo from "@/assets/logos/zarkoperfume.webp";
 import chocLoveLogo from "@/assets/choc-love-logo.webp";
@@ -8,7 +8,7 @@ import swarovskiLogo from "@/assets/Swarovski_Logo.svg";
 import lorealLogo from "@/assets/L'Oréal_logo.svg.png";
 import lakridsLogo from "@/assets/logos/lakrids-by-bulow.webp";
 import lvmhLogo from "@/assets/LVMH-Logo.png";
-import rojaLogo from "@/assets/roja perfume.png";
+import rojaLogo from "@/assets/roja-perfume.png";
 import geskeLogo from "@/assets/GESKE_LOGO.jpg";
 import pandoraLogo from "@/assets/Pandora-Logo.png";
 
@@ -44,7 +44,7 @@ const PaperpulpSection = () => {
     <section id="trends">
       {/* Hero image + text overlay */}
       <div className="relative overflow-hidden">
-        <img src={modelBg} alt="" className="w-full h-[65vh] object-cover object-top" />
+        <img src={trendsBg} alt="" className="w-full h-[65vh] object-cover object-top" />
         <div className="absolute inset-0 bg-black/55" />
         <div className="absolute inset-0 flex flex-col items-center justify-end text-center px-8 pb-16">
           <SectionReveal>
