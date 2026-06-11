@@ -5,38 +5,40 @@ import imgPaperpulp from "@/assets/tom dixon.png";
 import imgBeauty from "@/assets/Body_brush_RECHARGE_03_w._box_1400x1400-p.png";
 
 const categories = [
-  { label: "Fragrances", img: imgFragrances },
-  { label: "Confectionary", img: imgConfectionary },
-  { label: "Paper Pulp", img: imgPaperpulp },
-  { label: "Beauty & Wellness", img: imgBeauty },
+  { label: "Fragrances", img: imgFragrances, href: "#packaging" },
+  { label: "Confectionary", img: imgConfectionary, href: "#trends" },
+  { label: "Paper Pulp", img: imgPaperpulp, href: "#paperpulp" },
+  { label: "Beauty & Wellness", img: imgBeauty, href: "#compliance" },
 ];
+
+const handleClick = (href: string) => {
+  const el = document.querySelector(href);
+  el?.scrollIntoView({ behavior: "smooth" });
+};
 
 const PackagingGrid = () => {
   return (
     <section id="packaging" className="bg-background py-24 px-8 md:px-16 lg:px-24">
       <SectionReveal>
-        <p className="font-body text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">
-          What we do
-        </p>
-        <h2 className="font-serif text-5xl md:text-7xl text-foreground mb-16">
-          Packaging
-        </h2>
+        <p className="font-body text-xs tracking-[0.3em] uppercase text-muted-foreground mb-4">What we do</p>
+        <h2 className="font-serif text-5xl md:text-7xl text-foreground mb-16">Packaging</h2>
       </SectionReveal>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {categories.map((cat, i) => (
           <SectionReveal key={cat.label} delay={i * 0.1}>
-            <div className="relative overflow-hidden group aspect-[3/4]">
+            <button
+              onClick={() => handleClick(cat.href)}
+              className="relative overflow-hidden group aspect-[3/4] w-full cursor-pointer"
+            >
               <img
                 src={cat.img}
                 alt={cat.label}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/35 transition-colors duration-300" />
-              <p className="absolute bottom-6 left-6 font-serif text-xl text-white">
-                {cat.label}
-              </p>
-            </div>
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300" />
+              <p className="absolute bottom-6 left-6 font-serif text-xl text-white">{cat.label}</p>
+            </button>
           </SectionReveal>
         ))}
       </div>
