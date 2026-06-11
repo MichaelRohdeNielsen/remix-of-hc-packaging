@@ -7,35 +7,40 @@ const PackagingSubsections = () => {
     <section id="paperpulp">
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
 
-        {/* LEFT — black */}
-        <div className="bg-black px-10 md:px-14 pt-20 pb-0 flex flex-col justify-between">
-          <SectionReveal>
-            <h2
-              className="font-sans font-black uppercase leading-none mb-1"
-              style={{ fontSize: "clamp(3rem, 7vw, 6rem)", color: "#d4b84a" }}
-            >
-              PAPER<br />PULP
-            </h2>
-            <p className="font-serif text-xl md:text-2xl text-white/80 mb-8">
-              Sustainable Packaging with Purpose
-            </p>
-
-            <div className="space-y-4 mb-12">
-              <p className="font-body text-sm text-white/60 leading-relaxed">
-                Paper pulp, made from bagasse (a byproduct of sugarcane), is a biodegradable, compostable, and plastic-free material that offers both sustainability and performance. As a natural fiber material, it's ideal for shaping beautiful, durable packaging without harming the planet.
-              </p>
-              <p className="font-body text-sm text-white/60 leading-relaxed">
-                At HC Packaging, we operate two of our own dedicated paper pulp factories, giving us full control over tooling, quality, and lead time — from molded inserts to luxury box interiors.
-              </p>
-            </div>
-          </SectionReveal>
-
-          {/* Bukchon image flush at bottom */}
+        {/* LEFT — Bukchon image as full background */}
+        <div className="relative flex flex-col justify-between min-h-[600px] overflow-hidden">
+          {/* Background image */}
           <img
             src={makgeolliImg}
             alt="Bukchon Makgeolli paperpulp packaging"
-            className="w-full h-auto object-cover block"
+            className="absolute inset-0 w-full h-full object-cover object-center"
           />
+          {/* Dark overlay so text is readable */}
+          <div className="absolute inset-0 bg-black/60" />
+
+          {/* Text on top */}
+          <div className="relative z-10 px-10 md:px-14 pt-20 pb-20">
+            <SectionReveal>
+              <h2
+                className="font-sans font-black uppercase leading-none mb-1"
+                style={{ fontSize: "clamp(3rem, 7vw, 6rem)", color: "#d4b84a" }}
+              >
+                PAPER<br />PULP
+              </h2>
+              <p className="font-serif text-xl md:text-2xl text-white/80 mb-8">
+                Sustainable Packaging with Purpose
+              </p>
+
+              <div className="space-y-4">
+                <p className="font-body text-sm text-white/70 leading-relaxed">
+                  Paper pulp, made from bagasse (a byproduct of sugarcane), is a biodegradable, compostable, and plastic-free material that offers both sustainability and performance. As a natural fiber material, it's ideal for shaping beautiful, durable packaging without harming the planet.
+                </p>
+                <p className="font-body text-sm text-white/70 leading-relaxed">
+                  At HC Packaging, we operate two of our own dedicated paper pulp factories, giving us full control over tooling, quality, and lead time — from molded inserts to luxury box interiors.
+                </p>
+              </div>
+            </SectionReveal>
+          </div>
         </div>
 
         {/* RIGHT — white */}
